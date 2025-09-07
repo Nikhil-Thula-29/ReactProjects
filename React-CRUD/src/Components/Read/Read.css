@@ -1,0 +1,51 @@
+
+
+.read-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.read-card {
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 30px 25px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.read-card:hover {
+  transform: translateY(-5px);
+}
+
+.read-card h3 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
+}
+
+.read-card .user-detail {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #555;
+}
+
+.read-card .user-detail strong {
+  color: #222;
+}
+
+.read-card .btn {
+  margin-top: 20px;
+}
+
+.read-card .btn + .btn {
+  margin-left: 10px;
+}

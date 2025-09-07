@@ -1,0 +1,102 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "username": "johnd",
+      "email": "john.doe@example.com",
+      "phone": "123-456-7890",
+      "website": "johndoe.com"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "username": "janes",
+      "email": "jane.smith@example.com",
+      "phone": "987-654-3210",
+      "website": "janesmith.org"
+    },
+    {
+      "id": "3",
+      "name": "Michael Johnson",
+      "username": "mikej",
+      "email": "mike.johnson@example.com",
+      "phone": "555-123-4567",
+      "website": "mikejohnson.net"
+    },
+    {
+      "id": "4",
+      "name": "Emily Davis",
+      "username": "emilyd",
+      "email": "emily.davis@example.com",
+      "phone": "444-222-1111",
+      "website": "emilydavis.dev"
+    },
+    {
+      "id": "5",
+      "name": "David Wilson",
+      "username": "davidw",
+      "email": "david.wilson@example.com",
+      "phone": "666-777-8888",
+      "website": "davidwilson.io"
+    },
+    {
+      "id": "6",
+      "name": "Sophia Brown",
+      "username": "sophiab",
+      "email": "sophia.brown@example.com",
+      "phone": "222-333-4444",
+      "website": "sophiabrown.com"
+    },
+    {
+      "id": "7",
+      "name": "James Anderson",
+      "username": "jamesa",
+      "email": "james.anderson@example.com",
+      "phone": "999-888-7777",
+      "website": "jamesanderson.org"
+    },
+    {
+      "id": "8",
+      "name": "Olivia Martinez",
+      "username": "oliviam",
+      "email": "olivia.martinez@example.com",
+      "phone": "111-222-3333",
+      "website": "oliviamartinez.net"
+    },
+    {
+      "id": "9",
+      "name": "William Thomas",
+      "username": "willt",
+      "email": "william.thomas@example.com",
+      "phone": "555-666-7777",
+      "website": "willthomas.io"
+    },
+    {
+      "id": "10",
+      "name": "Ava Taylor",
+      "username": "avat",
+      "email": "ava.taylor@example.com",
+      "phone": "444-555-6666",
+      "website": "avataylor.dev"
+    },
+    {
+      "id": "11",
+      "name": "Kiran",
+      "email": "kiran1@gmail.com",
+      "phone": "8888888877"
+    },
+    {
+      "id": "12",
+      "name": "Ganesh",
+      "email": "ganesh.3@gmail.com",
+      "phone": "98765436432"
+    },
+    {
+      "id": "13",
+      "name": "Nikhil Raj",
+      "email": "nikraj123@gmail.co",
+      "phone": "9234567656"
+    }
+  ]
+}

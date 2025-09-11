@@ -1,5 +1,7 @@
+import Card from "../card/Card";
 import Categories from "../category/category";
 import Nav from "../nav/Nav";
+import { food_items } from "../../food";
 
 function Home(){
    return (
@@ -15,6 +17,17 @@ function Home(){
                         </div>
                     );
                     
+                })
+            }
+        </div>
+        <div className="w-full flex flex-wrap gap-5 px-5 justify-center items-center pt-8 pb-8">
+            {
+                food_items.map((item)=>{
+                    return(
+                        <div className="m-3">
+                            <Card id={item.id} name={item.food_name} type={item.food_type} image={item.food_image} price={item.price}/>
+                        </div>
+                    );
                 })
             }
         </div>

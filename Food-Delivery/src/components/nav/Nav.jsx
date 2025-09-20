@@ -4,6 +4,7 @@ import { FaBagShopping } from "react-icons/fa6";
 import { useContext, useEffect } from "react";
 import userContext from "../context/UserContext";
 import { food_items } from "../../food";
+import { useSelector } from "react-redux";
 
 function Nav(){
     let {input,setInput,cat,setCat,cart,setCart}=useContext(userContext);
@@ -16,6 +17,9 @@ function Nav(){
         })
         setCat(newList);
     },[input]);
+    let cartSize=useSelector((state)=>{
+        return state.cart
+    })
     return (
         //Generally in tailwind css all the css we write will directly for the mobile app this is written in tailwind docs for web app for large screen we need to modify accordingly so for that
         //we are using md:px-8 that is if it is medium screen px-8 i.e it become responsive.
@@ -38,7 +42,7 @@ function Nav(){
             setCart(true);
            }}>
                 <span className="absolute -top-1 -right-1 bg-green-500 text-white font-bold text-[12px] w-[20px] h-[20px] flex items-center justify-center rounded-full">
-                    0
+                    {cartSize.length}
                 </span>
             <FaBagShopping className="w-[30px] h-[30px] text-green-500" />
             </div>

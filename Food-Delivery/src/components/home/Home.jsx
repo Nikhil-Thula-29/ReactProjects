@@ -6,6 +6,7 @@ import { useContext } from "react";
 import userContext from "../context/UserContext";
 import { RxCross2 } from "react-icons/rx";
 import Cart from "../cart/Cart";
+import { useSelector } from "react-redux";
 
 
 function Home(){
@@ -22,7 +23,10 @@ function Home(){
         }
     }
 
-   return (
+    let items=useSelector((state)=>{
+        return state.cart //this cart is used in store (name).
+    })
+    return (
     <div  className="bg-slate-200 w-full min-h-screen">
         <Nav/>
         {
@@ -50,7 +54,7 @@ function Home(){
                 cat.map((item)=>{
                     return(
                         <div className="m-3">
-                            <Card id={item.id} name={item.food_name} type={item.food_type} image={item.food_image} price={item.price}/>
+                            <Card id={item.id} name={item.food_name} type={item.food_type} image={item.food_image} price={item.price} qty={item.food_quantity}/>
                         </div>
                     );
                 })
@@ -70,7 +74,11 @@ function Home(){
                     setCart(false);
                 }}/>
             </header>
-            <Cart/>
+            <div className="w-full mt-9 flex flex-col gap-8">
+           {items.map((item)=>{
+                return <Cart id={item.id} image={item.image} name={item.name} qty={item.qty} price={item.price}/> 
+           })}
+           </div>
         </div>
     </div>
    ); 

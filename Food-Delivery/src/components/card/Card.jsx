@@ -3,6 +3,7 @@ import { LuLeafyGreen } from "react-icons/lu";
 import { GiChickenOven } from "react-icons/gi";
 import { useDispatch } from "react-redux";
 import { AddItem } from "../../redux/cartSlice";
+import { toast } from "react-toastify";
 
 
 function Card({id,name,type,image,price,qty}) {
@@ -21,7 +22,8 @@ function Card({id,name,type,image,price,qty}) {
             <div className="flex justify-center items-center gap-2 text-green-500 text-lg font-semibold">{type==="veg"?<LuLeafyGreen />:<GiChickenOven />}<span>{type}</span></div>
         </div>
         <button className="w-full p-3 rounded-lg bg-green-500 text-white hover:bg-green-600 cursor-pointer transition-all" onClick={()=>{
-          dispatch(AddItem({id:id,name:name,type:type,image:image,price:price,qty:qty}))
+          dispatch(AddItem({id:id,name:name,type:type,image:image,price:price,qty:qty}));  //these names id,price will be used at the time of fetching
+          toast.success(`${name} Added Successfully`);
         }}>Add to dish</button>
     </div>
   )
